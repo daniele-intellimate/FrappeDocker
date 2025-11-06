@@ -88,3 +88,6 @@ volumes:
   mariadb-data:
   #postgresql-data:
   #mailpit-data:
+# Questo campo deve essere aggiunto alla configurazione della build
+options:
+  logging: CLOUD_LOGGING_ONLY # I log andranno solo in Cloud Logging, ignorando GCS
